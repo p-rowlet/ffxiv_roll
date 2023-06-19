@@ -3,9 +3,11 @@
 	import RollList from "./../components/rollList.svelte";
 	import { currentTab } from "../store/stores";
 	import { tablist } from "../data/tablist";
+	import Search from "../components/search.svelte";
 </script>
 
-<main class="container max-w-7xl mx-auto pt-14">
+<main class="container max-w-7xl mx-auto pt-14 min-h-screen">
+	<Search/>
 	<Tab />
 	{#if $currentTab.name === "all"}
 		{#each tablist as tab}

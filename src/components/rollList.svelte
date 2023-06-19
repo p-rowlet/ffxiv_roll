@@ -9,7 +9,7 @@
 </script>
 
 <h1 class="mt-4 font-bold text-lg">{theme}</h1>
-<ul class="max-w-7xl mx-auto min-h-screen">
+<ul class="max-w-7xl mx-auto ">
     <li class="grid grid-cols-roll gap-4 py-2 text-center font-bold rounded-md bg-slate-200">
         <div>No</div>
         <div>버전</div>
