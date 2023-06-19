@@ -1,4 +1,14 @@
-{
+export const data: { [key: string]: any } = {
+    "all" : [
+        {
+            "id" : 1001,
+            "ver" : 3.2,
+            "title" : "Wailers And Waterwheels",
+            "description" : "그리다니아 낮 테마",
+            "way" : "그리다니아 신시가지 (X:11.5 Y:11.2) 에테라이트 광장 -  마이센타 5,000길",
+            "link" : "https://youtu.be/VSKNntvdRJk"
+        }
+    ],   
     "region1" : [
         {
             "id" : 1001,
@@ -147,7 +157,7 @@
             "id" : 1019,
             "ver" : 3.2,
             "title" : "Four-sided Circle",
-            "description": "골드소서 메인테마 / 사보텐더 대왕 탈 것 테마",
+            "description": "골드소서 메인테마 \n사보텐더 대왕 탈 것 테마",
             "way": "연금술사 LV50 제작 / 낡은 악보 : 망자의 종소리 (X22.7 Y6.7) 오리아나 - 시학 500개로 교환",
             "link": "https://youtu.be/GYByBk5tTbk"
         },
@@ -172,7 +182,7 @@
             "ver" : 3.4,
             "title" : "Behind Closed Doors",
             "description": "여관 객실 테마",
-            "way": "그리다니아 신시가지 (X:11.5 Y:11.2) 마이센타 에테광장 \n림사로민사 상층갑판 (X:9.9 Y:11.4) 방고 장고 에테광장 \n 울다하 날 회랑 (X:10.5 Y:9.5) 로어릭 루비길 국제시장 \n 5,000길",
+            "way": "그리다니아 신시가지 (X:11.5 Y:11.2) 마이센타 에테광장 \n 림사로민사 상층갑판 (X:9.9 Y:11.4) 방고 장고 에테광장 \n 울다하 날 회랑 (X:10.5 Y:9.5) 로어릭 루비길 국제시장 \n 5,000길",
             "link": "https://youtu.be/tWoKzz5Tfzo"
         },
         {
