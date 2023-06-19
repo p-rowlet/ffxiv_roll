@@ -5,3 +5,8 @@ export const currentTab = writable({
     tabname : "전체",
     id : 0
 });
+
+export const searchText = writable({
+    search : false,
+    text : ""
+});
