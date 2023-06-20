@@ -22,7 +22,7 @@
 		id="search"
 		class="border-b border-slate-400 p-3 w-2/4 focus:outline-none dark:bg-dark-default"
 		placeholder="악보명, 테마로 검색"
-		on:change={search}
+		on:input={search}
 		bind:value={$searchText.text}
 	/>
 </form>

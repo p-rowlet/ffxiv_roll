@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { searchText } from "../store/stores";
 	import Arcodian from "./arcodian.svelte";
 
 	export let id: number;
@@ -12,12 +11,13 @@
 
 	let isClick: boolean = false;
 	const rollClick = () => {
-		isClick ? (isClick = false) : (isClick = true);
+		isClick = !isClick;
 	};
 
-	$: if ($searchText.search === true) {
-		isClick = false;
-	}
+    $: {
+        title = title;
+        isClick = false;
+    }
 
 </script>
 
@@ -28,7 +28,7 @@
 			: 'border-none'} 
             boder-gray-400 dark:border-gray-600 text-center text-sm
             hover:bg-slate-100 dark:hover:bg-gray-600"
-		on:click={rollClick}
+		on:click={rollClick} 
 	>
 		<div>
 			{id - listId}
