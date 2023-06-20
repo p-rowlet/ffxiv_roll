@@ -10,3 +10,5 @@ export const searchText = writable({
     search : false,
     text : ""
 });
+
+export const theme = writable("light");

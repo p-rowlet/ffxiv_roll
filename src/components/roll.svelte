@@ -15,16 +15,19 @@
 		isClick ? (isClick = false) : (isClick = true);
 	};
 
-    $: if($searchText.search === true){
-        isClick = false;
-    } 
+	$: if ($searchText.search === true) {
+		isClick = false;
+	}
+
 </script>
 
 <li>
 	<button
 		class="w-full grid grid-cols-roll gap-4 py-2 {isClick === false
 			? 'border-b'
-			: 'border-none'} boder-gray-400 text-center text-sm hover:bg-slate-100"
+			: 'border-none'} 
+            boder-gray-400 dark:border-gray-600 text-center text-sm
+            hover:bg-slate-100 dark:hover:bg-gray-600"
 		on:click={rollClick}
 	>
 		<div>

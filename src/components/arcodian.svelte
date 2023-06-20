@@ -15,7 +15,7 @@
 	}
 </script>
 
-<li transition:slide class="flex justify-center p-3 border-b text-sm border-slate-200" >
+<li transition:slide class="flex justify-center p-3 border-b text-sm border-slate-200 dark:border-gray-600" >
 	{#if link}
 		<iframe
 			width="560"
