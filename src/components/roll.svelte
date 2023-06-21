@@ -43,11 +43,11 @@
 		on:click={rollClick}
 	>
 		<div class="text-xl flex justify-center">
-			<button on:click={starClick}>
+			<button on:click={starClick} aria-label={favor ? "즐겨찾기 된 악보 - 클릭 시 해제 " : "즐겨찾는 악보로 추가"}>
 				{#if favor}
 					<Icon icon="mingcute:star-fill" />
 				{:else}
-					<Icon icon="mingcute:star-line" />
+					<Icon icon="mingcute:star-line"/>
 				{/if}
 			</button>
 		</div>

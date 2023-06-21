@@ -19,13 +19,13 @@
 	</a>
 
 	<div class="flex gap-4 text-4xl text-slate-700 dark:text-slate-300">
-		<button on:click={darkModeToggle}>
+		<button on:click={darkModeToggle} aria-label="화면 다크모드 / 라이트모드">
 			{#if $theme === "light"}
 				<Icon icon="fa-solid:sun" />
 			{:else}
 				<Icon icon="solar:moon-bold" />
 			{/if}
 		</button>
-		<button><Icon icon="uiw:setting" /></button>
+		<button aria-label="설정"><Icon icon="uiw:setting" /></button>
 	</div>
 </header>

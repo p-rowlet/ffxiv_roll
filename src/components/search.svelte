@@ -24,5 +24,6 @@
 		placeholder="악보명, 테마로 검색"
 		on:input={search}
 		bind:value={$searchText.text}
+		aria-label="악보명, 테마로 검색"
 	/>
 </form>
