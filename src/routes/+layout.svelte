@@ -18,6 +18,11 @@
 	});
 </script>
 
+<svelte:head>
+	<title>FFXIV 오케스트리온</title>
+	<meta name="description" content="파이널판타지 14 오케스트리온 악보 모음집">
+</svelte:head>
+
 {#if !isMount}
 	<div class="bg-black h-screen flex justify-center items-center">
 		<div role="status">

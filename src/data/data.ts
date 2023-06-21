@@ -315,7 +315,7 @@ export const data: { [key: string]: any } = {
         },
         {
             "id" : 1039,
-            "ver" : 4.0,
+            "ver" : "4.0",
             "title" : "Skylords",
             "description": "드라바니아 구름바다 밤 테마",
             "way": "연금술사 비전서 3권 제작 낡은 악보 >드라구름 A,S급 마물드랍",
@@ -323,7 +323,7 @@ export const data: { [key: string]: any } = {
         },
         {
             "id" : 1040,
-            "ver" : 4.0,
+            "ver" : "4.0",
             "title" : "The Silent Regard of Stars",
             "description": "저지 드라바니아 밤 테마",
             "way": "연금술사 비전서 3권 제작 낡은 악보 >저지드라 A,S급 마물드랍",
