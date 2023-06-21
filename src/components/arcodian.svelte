@@ -1,7 +1,7 @@
 <script lang="ts">
     import { slide } from 'svelte/transition';
 	export let title: string;
-	export let link: string;
+	export let link: string | undefined;
 
 	function convertToEmbeddedURL(url: string): string {
 		const regExp =

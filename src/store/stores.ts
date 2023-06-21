@@ -12,3 +12,5 @@ export const searchText = writable({
 });
 
 export const theme = writable("light");
+
+export const favorites = writable<number[]>([]);
