@@ -1,11 +1,22 @@
 <script>
 	import Icon from "@iconify/svelte";
 	import { theme } from "../store/stores";
+	import Setting from "./setting.svelte";
+
+	let showModal = false;
 
 	const darkModeToggle = () => {
 		theme.update((value) => (value === "light" ? "dark" : "light"));
 		localStorage.setItem("theme", $theme);
 	};
+
+	const openModal = () =>{
+		showModal = true;
+	}
+
+	const closeModal = () =>{
+		showModal = false;
+	}
 </script>
 
 <header
@@ -26,6 +37,9 @@
 				<Icon icon="solar:moon-bold" />
 			{/if}
 		</button>
-		<button aria-label="설정"><Icon icon="uiw:setting" /></button>
+		<button on:click={openModal} aria-label="설정"><Icon icon="uiw:setting" /></button>
 	</div>
 </header>
+{#if showModal}
+<Setting closeModal = {closeModal}/>
+{/if}
