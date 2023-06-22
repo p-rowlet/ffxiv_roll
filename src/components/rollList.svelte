@@ -46,7 +46,7 @@
 </script>
 
 <h1 class="mt-4 font-bold text-lg">{theme}</h1>
-<ul class="max-w-7xl mx-auto">
+<ul class="max-w-5xl mx-auto">
 	<li
 		class="grid grid-cols-roll gap-4 py-2 text-center font-bold rounded-md bg-slate-200 dark:bg-gray-700"
 	>
@@ -55,7 +55,6 @@
 		<div>버전</div>
 		<div>이름</div>
 		<div>테마</div>
-		<div>입수방법</div>
 	</li>
 	{#if $searchText.search}
 		{#if searchData && searchData.length > 0}

@@ -2,6 +2,7 @@
     import { slide } from 'svelte/transition';
 	export let title: string;
 	export let link: string | undefined;
+	export let way : string;
 
 	function convertToEmbeddedURL(url: string): string {
 		const regExp =
@@ -15,7 +16,10 @@
 	}
 </script>
 
-<li transition:slide class="flex justify-center p-3 border-b text-sm border-slate-200 dark:border-gray-600" >
+<li transition:slide class="flex flex-col justify-center items-center p-3 border-b text-sm border-slate-200 dark:border-gray-600" >
+	<div class="whitespace-pre-wrap my-3">
+		<span class="font-bold">입수 방법: </span> {way}
+	</div>
 	{#if link}
 		<iframe
 			width="560"
@@ -23,7 +27,7 @@
 			src={convertToEmbeddedURL(link)}
 			title={title}
 			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allow="web-share"
 			allowfullscreen
 		/>
 	{:else}

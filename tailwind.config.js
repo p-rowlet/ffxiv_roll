@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
             gridTemplateColumns: {
-                'roll' : '40px 50px 90px 1.3fr 1fr 2fr'
+                'roll' : '40px 35px 90px 1fr 1fr'
             },
 			colors: {
 				'dark-default' : '#181a1b',

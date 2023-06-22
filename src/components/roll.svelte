@@ -63,11 +63,8 @@
 		<div class="whitespace-pre-wrap">
 			{description}
 		</div>
-		<div class="whitespace-pre-wrap text-left">
-			{way}
-		</div>
 	</button>
 	{#if isClick}
-		<Arcodian {title} {link} />
+		<Arcodian {title} {link} way={way}/>
 	{/if}
 </li>

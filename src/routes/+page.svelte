@@ -13,7 +13,7 @@
 </script>
 
 <main class="dark:bg-dark-default dark:text-dark-text py-14">
-	<section class="container max-w-7xl mx-auto min-h-screen">
+	<section class="container max-w-5xl mx-auto min-h-screen">
 		<Search />
 		<Tab />
 		{#if $currentTab.name === "all"}
