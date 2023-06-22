@@ -3,6 +3,7 @@
 	export let title: string;
 	export let link: string | undefined;
 	export let way : string;
+	let innerWidth = 0;
 
 	function convertToEmbeddedURL(url: string): string {
 		const regExp =
@@ -16,13 +17,15 @@
 	}
 </script>
 
+<svelte:window bind:innerWidth />
+
 <li transition:slide class="flex flex-col justify-center items-center p-3 border-b text-sm border-slate-200 dark:border-gray-600" >
-	<div class="whitespace-pre-wrap my-3">
+	<div class="whitespace-pre-wrap mt-1 mb-3">
 		<span class="font-bold">입수 방법: </span> {way}
 	</div>
 	{#if link}
 		<iframe
-			width="560"
+			width="{innerWidth < 560? innerWidth : 560}"
 			height="315"
 			src={convertToEmbeddedURL(link)}
 			title={title}

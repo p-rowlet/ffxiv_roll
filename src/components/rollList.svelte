@@ -48,7 +48,7 @@
 <h1 class="mt-4 font-bold text-lg">{theme}</h1>
 <ul class="max-w-5xl mx-auto">
 	<li
-		class="grid grid-cols-roll gap-4 py-2 text-center font-bold rounded-md bg-slate-200 dark:bg-gray-700"
+		class="grid grid-cols-roll gap-1 md:gap-4 py-2 text-center font-bold rounded-md bg-slate-200 dark:bg-gray-700"
 	>
 		<div />
 		<div>No</div>

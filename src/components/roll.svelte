@@ -35,7 +35,7 @@
 
 <li>
 	<button
-		class="w-full grid grid-cols-roll gap-4 py-2 {isClick === false
+		class="w-full grid grid-cols-roll gap-1 md:gap-4 py-2 {isClick === false
 			? 'border-b'
 			: 'border-none'} 
             boder-gray-400 dark:border-gray-600 text-center text-sm

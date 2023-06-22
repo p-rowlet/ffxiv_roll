@@ -38,7 +38,7 @@
 >
 	<div class="flex justify-center items-center h-screen" id="settingModal">
 		<div
-			class="flex flex-col items-center max-w-3xl px-4 py-6 pt-3 gap-3 bg-slate-200 dark:bg-slate-700 rounded-md"
+			class="flex flex-col items-center max-w-full md:max-w-3xl px-4 py-6 pt-3 gap-3 bg-slate-200 dark:bg-slate-700 rounded-md"
 		>
 			<div class="flex w-full items-center justify-between">
 				<h1
@@ -67,13 +67,13 @@
 					<p>적용할 수 없는 데이터입니다.</p>
 				</div>
 			{/if}
-			<div class="relative">
+			<div class="relative max-w-[80vw] md:max-w-3xl">
 				<textarea
 					name="favority_data"
 					id=""
 					cols="60"
 					rows="8"
-					class="resize-none focus:outline-none"
+					class="resize-none focus:outline-none max-w-[80vw]"
 					bind:value
 				/>
 				<button
